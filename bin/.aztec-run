@@ -7,7 +7,7 @@ set -euo pipefail
 IMAGE=${1:-}
 shift
 
-VERSION=${VERSION:-"latest"}
+VERSION=${VERSION:-"0.24.0"}
 
 # Colors.
 y="\033[33m"

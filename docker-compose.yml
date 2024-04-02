@@ -15,10 +15,9 @@ services:
       FORK_URL:
       FORK_BLOCK_NUMBER:
       ANVIL_PORT: ${ANVIL_PORT:-8545}
-    platform: linux/amd64
 
   aztec:
-    image: "aztecprotocol/aztec"
+    image: "aztecprotocol/aztec:0.24.0"
     ports:
       - "${PXE_PORT:-8080}:${PXE_PORT:-8080}"
     environment:
@@ -35,4 +34,3 @@ services:
       PXE_PORT: ${PXE_PORT:-8080}
     volumes:
       - ./log:/usr/src/yarn-project/aztec/log:rw
-    platform: linux/amd64
