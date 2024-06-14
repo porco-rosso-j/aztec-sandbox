@@ -12,7 +12,7 @@ services:
     ports:
       - "${ANVIL_PORT:-8545}:${ANVIL_PORT:-8545}"
     environment:
-      FORK_URL:
+      FORK_URL: "https://eth-mainnet.g.alchemy.com/v2/E63nfe-0QvGO00TjKld260K_CRcHEhEo"
       FORK_BLOCK_NUMBER:
       ANVIL_PORT: ${ANVIL_PORT:-8545}
 
